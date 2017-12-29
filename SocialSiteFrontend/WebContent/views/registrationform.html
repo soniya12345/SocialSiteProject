@@ -1,0 +1,78 @@
+<div class="container" style="background-image: url('registration.jpg');">
+<span style="color:red" ng-if="error.code==1">{{error.message}}</span>
+<form class="form-horizontal">
+<fieldset>
+
+<legend>Registration Page</legend>
+
+<!-- Input Fields -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="username">Username</label>  
+  <div class="col-md-4">
+  <input id="username" name="username" type="text" placeholder="Enter a Username" class="form-control input-md" required="" ng-model="user.username"> 
+  <span style="color:red" ng-if="error.code==2">{{error.message}}</span> 
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="password">Password</label>  
+  <div class="col-md-4">
+  <input id="password" name="password" type="password" placeholder="Enter a Password" class="form-control input-md" required="" ng-model="user.password"> 
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" placeholder="Enter a Email Id" class="form-control input-md" required="" ng-model="user.email">
+  <span style="color:red" ng-if="error.code==3">{{error.message}}</span>  
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="firstname">First name</label>  
+  <div class="col-md-4">
+  <input id="firstname" name="firstname" type="text" placeholder="Enter First name" class="form-control input-md" required="" ng-model="user.firstname">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="lastname">Last name</label>  
+  <div class="col-md-4">
+  <input id="lastname" name="lastname" type="text" placeholder="Enter Last name" class="form-control input-md" required="" ng-model="user.lastname">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="phonenumber">Phonenumber</label>  
+  <div class="col-md-4">
+  <input id="phonenumber" name="phonenumber" type="text" placeholder="Enter Phonenumber" class="form-control input-md" required="" ng-model="user.phonenumber">
+    
+  </div>
+</div>
+
+<!-- Select Role -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectrole">Select Role</label>
+  <div class="col-md-4">
+    <select id="selectrole" name="selectrole" class="form-control input-md">
+      <option value="STUDENT" ng-model="user.role">STUDENT</option>
+      <option value="ALUMNI" ng-model="user.role">ALUMNI</option>
+      <option value="EMPLOYEE" ng-model="user.role">EMPLOYEE</option>
+    </select>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="EDIT" class="btn btn-primary" ng-click="registerUser()">SUBMIT</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+<div>

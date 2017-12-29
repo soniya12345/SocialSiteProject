@@ -1,0 +1,70 @@
+<span style="color:red">{{error.message}}</span> 
+<form class="form-horizontal">
+<fieldset>
+
+<legend>Job Form</legend>
+
+<!-- Input Fields -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="jobtitle">Enter Job Title</label>  
+  <div class="col-md-4">
+  <input id="jobtitle" name="jobtitle" type="text" placeholder="Enter Job Title" class="form-control input-md" required="" ng-model="job.jobTitle"> 
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="jobdescription">Enter Job Description</label>  
+  <div class="col-md-4">
+  <textarea rows="4" cols="20" id="jobdescription" name="jobdescription" placeholder="Enter Job Description" class="form-control input-md" required="" ng-model="job.jobDescription"></textarea> 
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Enter Skills Required</label>  
+  <div class="col-md-4">
+  <input id="skillsrequired" name="skillsrequired" type="text" placeholder="Enter Skills Required" class="form-control input-md" required="" ng-model="job.skillsRequired">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="location">Location</label>  
+  <div class="col-md-4">
+  <input id="location" name="location" type="text" placeholder="Enter Location" class="form-control input-md" required="" ng-model="job.location">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="lastname">Company Name</label>  
+  <div class="col-md-4">
+  <input id="companyname" name="companyname" type="text" placeholder="Enter Company Name" class="form-control input-md" required="" ng-model="job.companyname">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="salary">Salary</label>  
+  <div class="col-md-4">
+  <input id="salary" name="salary" type="text" placeholder="Enter Salary" class="form-control input-md" required="" ng-model="job.salary">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="phonenumber">Enter Years Of Experience</label>  
+  <div class="col-md-4">
+  <input id="yrsOfExp" name="yrsOfExp" type="text" placeholder="Enter Years Of Experience" class="form-control input-md" required="" ng-model="job.yrsOfExp">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-primary" ng-click="addJob()">Add Job</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
