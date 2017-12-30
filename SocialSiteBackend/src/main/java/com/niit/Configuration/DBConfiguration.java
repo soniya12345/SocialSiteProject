@@ -42,10 +42,10 @@ public class DBConfiguration
 	{
 	    BasicDataSource dataSource = new BasicDataSource();
 	    
-	    dataSource.setDriverClassName("oracle.jdbc.OracleDriver");
-	    dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:XE");
-	    dataSource.setUsername("collaboration");
-	    dataSource.setPassword("admin123");
+	    dataSource.setDriverClassName("org.h2.Driver");
+	    dataSource.setUrl("jdbc:h2:tcp://localhost/~/test");
+	    dataSource.setUsername("sa");
+	    dataSource.setPassword("");
 	    
 	    return dataSource;
 	}
